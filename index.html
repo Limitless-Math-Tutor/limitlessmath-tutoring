@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Limitless Math Tutoring — Book a Session</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .shadow-soft { box-shadow: 0 10px 25px rgba(0,0,0,.08); }
+    .scrollbar-hide::-webkit-scrollbar { display:none; } .scrollbar-hide{ -ms-overflow-style:none; scrollbar-width:none; }
+    .anchor{scroll-margin-top:88px;}
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal{opacity:0; transform: translateY(12px); transition: opacity .45s ease, transform .45s ease;}
+      .reveal-in{opacity:1; transform: none;}
+      .hover-float{transition: transform .25s ease, box-shadow .25s ease;}
+      .hover-float:hover{transform: translateY(-3px);}  
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-sky-50 text-slate-800">
+  <!-- NAV -->
+  <header class="sticky top-0 z-30 bg-white/70 backdrop-blur border-b">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-extrabold text-xl tracking-tight"><span class="text-indigo-600">Limitless</span> Tutoring</a>
+      <!-- Desktop nav -->
+      <nav id="navLinks" class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-indigo-600">Services</a>
+        <a href="#pricing" class="hover:text-indigo-600">Pricing</a>
+        <a href="#faq" class="hover:text-indigo-600">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="openBooking" class="hidden md:inline-block px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 shadow-soft">Book now</button>
+        <button id="menuBtn" class="md:hidden p-2 rounded-xl border" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <!-- Mobile dropdown -->
+    <div id="mobileMenu" class="md:hidden hidden border-t bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-3 flex flex-col gap-3 text-sm">
+        <a href="#services" class="hover:text-indigo-600">Services</a>
+        <a href="#pricing" class="hover:text-indigo-600">Pricing</a>
+        <a href="#faq" class="hover:text-indigo-600">FAQ</a>
+        <button id="openBookingMobile" class="mt-1 w-full px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 shadow-soft">Book now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative">
+    <div class="mx-auto max-w-6xl px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">K–8, Algebra, AP Precalculus & AP Calculus Tutoring</h1>
+        <p class="mt-4 text-slate-600 text-lg">Clear, step-by-step 1-on-1 lessons online via Zoom. Flexible scheduling • Grade-focused results.</p>
+        <div class="mt-6 flex gap-3">
+          <button id="openBooking2" class="px-5 py-3 rounded-2xl bg-indigo-600 text-white hover:bg-indigo-700 shadow-soft">Book a session</button>
+          <a href="#pricing" class="px-5 py-3 rounded-2xl border hover:bg-white shadow-soft">View pricing</a>
+        </div>
+        <p class="mt-3 text-sm text-slate-500">Online only • 150+ hours tutoring experience • Miami-Dade & Broward</p>
+      </div>
+      <div class="rounded-3xl p-6 shadow-soft bg-white">
+        <h3 class="text-lg font-semibold">Quick Stats</h3>
+        <ul class="mt-3 grid grid-cols-2 gap-4 text-center">
+          <li class="bg-indigo-50 rounded-2xl p-4">
+            <div class="text-3xl font-extrabold">150+ hrs</div>
+            <div class="text-xs text-slate-500">Tutoring experience</div>
+          </li>
+          <li class="bg-indigo-50 rounded-2xl p-4">
+            <div class="text-3xl font-extrabold">AP/K–8</div>
+            <div class="text-xs text-slate-500">From basics to AP</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="anchor py-14 bg-white">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl font-bold">What I teach</h2>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="rounded-2xl border p-6 shadow-soft hover-float" data-reveal><h3 class="font-semibold">K–8 Math</h3><p class="mt-2 text-sm text-slate-600">Number sense, fractions/decimals, word problems, foundations.</p></div>
+        <div class="rounded-2xl border p-6 shadow-soft hover-float" data-reveal><h3 class="font-semibold">Algebra I</h3><p class="mt-2 text-sm text-slate-600">Functions, linear systems, quadratics basics.</p></div>
+        <div class="rounded-2xl border p-6 shadow-soft hover-float" data-reveal><h3 class="font-semibold">Algebra II</h3><p class="mt-2 text-sm text-slate-600">Polynomials, exponentials/logs, rational functions.</p></div>
+        <div class="rounded-2xl border p-6 shadow-soft hover-float" data-reveal><h3 class="font-semibold">AP Precalculus</h3><p class="mt-2 text-sm text-slate-600">Trig, identities, complex numbers, limits, sequences.</p></div>
+        <div class="rounded-2xl border p-6 shadow-soft hover-float" data-reveal><h3 class="font-semibold">AP Calculus AB</h3><p class="mt-2 text-sm text-slate-600">Derivatives, integrals, series, FRQ strategy.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="anchor py-14">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl font-bold">Pricing</h2>
+      <div class="mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <!-- K–8 -->
+        <div class="rounded-2xl border p-6 shadow-soft hover-float" data-reveal>
+          <div class="text-sm text-slate-500">K–8 Math</div>
+          <div class="mt-2 inline-flex items-center gap-2 rounded-full bg-green-50 text-green-700 text-xs font-semibold px-3 py-1">First session FREE 🎉</div>
+          <div class="mt-1 text-3xl font-extrabold">$35<span class="text-base font-medium text-slate-500">/hr</span></div>
+          <ul class="mt-4 text-sm space-y-2 list-disc pl-5">
+            <li>Homework & study skills</li>
+            <li>Foundations & confidence</li>
+            <li>Parent progress recap</li>
+          </ul>
+          <button class="mt-5 px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 shadow-soft" data-book data-subject="K–8 Math">Book K–8</button>
+        </div>
+        <!-- Algebra I -->
+        <div class="rounded-2xl border p-6 shadow-soft hover-float" data-reveal>
+          <div class="text-sm text-slate-500">Algebra I</div>
+          <div class="mt-2 inline-flex items-center gap-2 rounded-full bg-green-50 text-green-700 text-xs font-semibold px-3 py-1">First session FREE 🎉</div>
+          <div class="mt-1 text-3xl font-extrabold">$35<span class="text-base font-medium text-slate-500">/hr</span></div>
+          <ul class="mt-4 text-sm space-y-2 list-disc pl-5">
+            <li>Functions & systems</li>
+            <li>Quadratics made simple</li>
+            <li>Practice PDFs included</li>
+          </ul>
+          <button class="mt-5 px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 shadow-soft" data-book data-subject="Algebra I">Book Algebra I</button>
+        </div>
+        <!-- Algebra II -->
+        <div class="rounded-2xl border p-6 shadow-soft hover-float" data-reveal>
+          <div class="text-sm text-slate-500">Algebra II</div>
+          <div class="mt-2 inline-flex items-center gap-2 rounded-full bg-green-50 text-green-700 text-xs font-semibold px-3 py-1">First session FREE 🎉</div>
+          <div class="mt-1 text-3xl font-extrabold">$35<span class="text-base font-medium text-slate-500">/hr</span></div>
+          <ul class="mt-4 text-sm space-y-2 list-disc pl-5">
+            <li>Polynomials & logs</li>
+            <li>Graphing & transformations</li>
+            <li>Targeted practice sets</li>
+          </ul>
+          <button class="mt-5 px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 shadow-soft" data-book data-subject="Algebra II">Book Algebra II</button>
+        </div>
+        <!-- AP Precalculus -->
+        <div class="rounded-2xl border p-6 shadow-soft hover-float" data-reveal>
+          <div class="text-sm text-slate-500">AP Precalculus</div>
+          <div class="mt-2 inline-flex items-center gap-2 rounded-full bg-green-50 text-green-700 text-xs font-semibold px-3 py-1">First session FREE 🎉</div>
+          <div class="mt-1 text-3xl font-extrabold">$40<span class="text-base font-medium text-slate-500">/hr</span></div>
+          <ul class="mt-4 text-sm space-y-2 list-disc pl-5">
+            <li>Exam-style practice</li>
+            <li>Unit checklists & pacing</li>
+            <li>FRQ-style breakdowns</li>
+          </ul>
+          <button class="mt-5 px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 shadow-soft" data-book data-subject="AP Precalculus">Book AP Precalc</button>
+        </div>
+        <!-- AP Calculus AB -->
+        <div class="rounded-2xl border p-6 shadow-soft hover-float md:col-span-2 xl:col-span-3" data-reveal>
+          <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+            <div>
+              <div class="text-sm text-slate-500">AP Calculus AB</div>
+              <div class="mt-2 inline-flex items-center gap-2 rounded-full bg-green-50 text-green-700 text-xs font-semibold px-3 py-1">First session FREE 🎉</div>
+              <div class="mt-1 text-3xl font-extrabold">$45<span class="text-base font-medium text-slate-500">/hr</span></div>
+            </div>
+            <div>
+              <button class="px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 shadow-soft" data-book data-subject="Calculus AB">Book Calc AB</button>
+            </div>
+          </div>
+          <ul class="mt-4 text-sm space-y-2 list-disc pl-5">
+            <li>Derivatives & integrals, applications</li>
+            <li>Series & advanced techniques</li>
+            <li>FRQ strategy & time management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="anchor py-16">
+    <div class="mx-auto max-w-4xl px-4">
+      <h2 class="text-2xl font-bold">FAQ</h2>
+      <div class="mt-6 space-y-4">
+        <details class="rounded-2xl border p-4"><summary class="font-semibold">Where do sessions happen?</summary><p class="mt-2 text-sm text-slate-600">All tutoring is online via Zoom. I’ll send the link after booking.</p></details>
+        <details class="rounded-2xl border p-4"><summary class="font-semibold">Is the first session really free?</summary><p class="mt-2 text-sm text-slate-600">Yes — your very first session is a free trial to make sure the fit is right. Standard hourly rates apply after that.</p></details>
+        <details class="rounded-2xl border p-4"><summary class="font-semibold">Do you offer packages?</summary><p class="mt-2 text-sm text-slate-600">No packages — simple hourly pricing by subject.</p></details>
+        <details class="rounded-2xl border p-4"><summary class="font-semibold">What’s your cancellation policy?</summary><p class="mt-2 text-sm text-slate-600">Free reschedule with 12+ hours notice. Late cancellations are billed at 50%.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING MODAL -->
+  <div id="bookingModal" class="fixed inset-0 hidden items-center justify-center bg-black/40 p-4 transition-opacity duration-200">
+    <div class="w-full max-w-xl bg-white rounded-2xl p-6 shadow-soft relative transform dialog">
+      <button id="closeBooking" class="absolute right-3 top-3 text-slate-500 hover:text-slate-700" aria-label="Close">✕</button>
+      <h3 class="text-xl font-bold">Book a session</h3>
+      <p class="text-sm text-slate-500 mt-1">First session is <span class="font-bold text-green-600">FREE</span> — future sessions billed at the listed hourly rate.</p>
+      <form id="bookingForm" class="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div><label class="text-sm">Student name</label><input required name="name" class="mt-1 w-full rounded-xl border p-3" placeholder="First & last" /></div>
+        <div><label class="text-sm">Email</label><input required type="email" name="email" class="mt-1 w-full rounded-xl border p-3" placeholder="name@email.com" /></div>
+        <div><label class="text-sm">Phone</label><input required name="phone" class="mt-1 w-full rounded-xl border p-3" placeholder="(###) ###‑####" /></div>
+        <div><label class="text-sm">Subject</label>
+          <select required name="subject" class="mt-1 w-full rounded-xl border p-3">
+            <option value="K–8 Math">K–8 Math</option>
+            <option value="Algebra I">Algebra I</option>
+            <option value="Algebra II">Algebra II</option>
+            <option value="AP Precalculus">AP Precalculus</option>
+            <option value="Calculus AB">Calculus AB</option>
+          </select>
+        </div>
+        <div class="grid grid-cols-2 gap-3 md:col-span-2">
+          <div><label class="text-sm">Date</label><input required type="date" name="date" class="mt-1 w-full rounded-xl border p-3" /></div>
+          <div><label class="text-sm">Start time</label><input required type="time" name="time" class="mt-1 w-full rounded-xl border p-3" /></div>
+        </div>
+        <div class="md:col-span-2"><label class="text-sm">What would you like help with?</label><textarea name="notes" rows="3" class="mt-1 w-full rounded-xl border p-3" placeholder="Upcoming quiz, topics, struggles…"></textarea></div>
+        <div class="md:col-span-2 flex items-center justify-between mt-2">
+          <div class="text-xs text-slate-500">Online sessions only (Zoom). WhatsApp confirmation after you submit.</div>
+          <button class="px-5 py-3 rounded-2xl bg-indigo-600 text-white hover:bg-indigo-700 shadow-soft" type="submit">Request booking</button>
+        </div>
+      </form>
+      <p id="successMsg" class="hidden mt-4 text-green-700 bg-green-50 border border-green-200 rounded-xl p-3 text-sm">Request created! A WhatsApp chat will open — tap send so I get your details instantly.</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="py-10 border-t">
+    <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <p class="text-sm text-slate-500">© <span id="year"></span> Limitless Tutoring — Carlos Ramirez</p>
+      <div class="text-sm text-slate-500">WhatsApp: <a class="underline" href="#" id="waFooter">+1 305 762 2046</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // CONFIG
+    const WHATSAPP_NUMBER = "+1 305 762 2046";
+
+    // UI refs
+    const modal = document.getElementById('bookingModal');
+    const dialog = document.querySelector('.dialog');
+    const openBtns = [document.getElementById('openBooking'), document.getElementById('openBooking2')].filter(Boolean);
+    const closeBtn = document.getElementById('closeBooking');
+    const form = document.getElementById('bookingForm');
+    const successMsg = document.getElementById('successMsg');
+    const waFooter = document.getElementById('waFooter');
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn) menuBtn.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
+    mobileMenu?.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> mobileMenu.classList.add('hidden')));
+    const openBookingMobile = document.getElementById('openBookingMobile');
+    if (openBookingMobile) openBookingMobile.addEventListener('click', ()=>{
+      mobileMenu.classList.add('hidden');
+      openModal();
+    });
+
+    // Modal open/close
+    function openModal(){
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      modal.style.opacity = 0;
+      if(dialog){ dialog.style.opacity = 0; dialog.style.transform = 'scale(0.96)'; }
+      requestAnimationFrame(()=>{
+        modal.style.transition = 'opacity .25s ease';
+        if(dialog){ dialog.style.transition = 'opacity .25s ease, transform .25s ease'; }
+        modal.style.opacity = 1; if(dialog){ dialog.style.opacity = 1; dialog.style.transform = 'scale(1)'; }
+      });
+    }
+    function closeModal(){
+      modal.style.opacity = 1; if(dialog){ dialog.style.opacity = 1; dialog.style.transform = 'scale(1)'; }
+      requestAnimationFrame(()=>{
+        modal.style.transition = 'opacity .18s ease';
+        if(dialog){ dialog.style.transition = 'opacity .18s ease, transform .18s ease'; }
+        modal.style.opacity = 0; if(dialog){ dialog.style.opacity = 0; dialog.style.transform = 'scale(0.98)'; }
+        setTimeout(()=>{ modal.classList.add('hidden'); }, 160);
+      });
+    }
+    openBtns.forEach(btn => btn.addEventListener('click', openModal));
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+    // Pricing buttons prefill & open modal
+    document.querySelectorAll('[data-book]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const subject = e.currentTarget.getAttribute('data-subject') || '';
+        const subjectEl = form.querySelector('[name="subject"]');
+        if (subject && subjectEl) subjectEl.value = subject;
+        openModal();
+      });
+    });
+
+    // WhatsApp open helper
+    function openWhatsApp(payload){
+      const message = `Tutoring request:%0A`
+        + `Student: ${payload.name}%0A`
+        + `Subject: ${payload.subject}%0A`
+        + `When: ${payload.date} at ${payload.time}%0A`
+        + (payload.notes?`Notes: ${payload.notes}%0A`:``)
+        + `Email: ${payload.email}%0A`
+        + `Phone: ${payload.phone}`;
+      const clean = WHATSAPP_NUMBER.replace(/[^+\d]/g, '');
+      window.open(`https://wa.me/${clean}?text=${message}`, '_blank');
+    }
+
+    // Form submit
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      const dt = new Date(`${data.date}T${data.time}`);
+      if (isNaN(dt.getTime()) || dt < new Date()) { alert('Please choose a future date/time.'); return; }
+      openWhatsApp(data);
+      successMsg.classList.remove('hidden');
+      ['name','email','phone'].forEach(k => localStorage.setItem(`tutor_${k}`, data[k]||''));
+    });
+
+    // Prefill saved contact
+    ['name','email','phone'].forEach(k => {
+      const el = form.querySelector(`[name="${k}"]`);
+      const v = localStorage.getItem(`tutor_${k}`);
+      if (el && v) el.value = v;
+    });
+
+    // Footer WA link
+    waFooter.addEventListener('click', (e)=>{ e.preventDefault(); const clean = WHATSAPP_NUMBER.replace(/[^+\d]/g, ''); window.open(`https://wa.me/${clean}`, '_blank'); });
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('[data-reveal]');
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('reveal-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.12});
+    reveals.forEach(el=>{ el.classList.add('reveal'); io.observe(el); });
+  </script>
+</body>
+</html>
